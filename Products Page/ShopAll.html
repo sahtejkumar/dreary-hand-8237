@@ -238,10 +238,12 @@ productsarr.map(function(elem){
 
     const button = document.createElement('button');
     button.innerText = 'Add to Cart';
+    
 
     button.setAttribute('id','cart')
     button.addEventListener("click", function(){
         addCart(elem)
+        // window.location.href = "cart.html"
     })
 
     var img = document.createElement('img');
