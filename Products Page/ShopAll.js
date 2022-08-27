@@ -224,7 +224,8 @@ function productpage(elem){
     console.log(elem)
     productData.push(elem)
     localStorage.setItem('products',JSON.stringify(productData))
-    window.location="./product.html"
+    // window.location="./product.html"
+    window.location="./cart.html"
 }
      //addCart = {};
      let cartdata = [] || JSON.parse(localStorage.getItem('cartitems'))
