@@ -4,7 +4,9 @@
     <meta charset="UTF-8">
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="./ShopAll.css">
     <title>Shop All</title>
+<<<<<<< Updated upstream
     <style>
         #mycontainer{
             display:flex;
@@ -60,6 +62,9 @@
             text-decoration:line-through;
         } */
     </style>
+=======
+    
+>>>>>>> Stashed changes
 </head>
 <body>
   
@@ -84,17 +89,17 @@
              </div>      
              <h3>REFINE BY</h3>
         </div>
-        <div><h3>180 products</h3></div>
+        <div><h3 id="pro_count">180 products</h3></div>
         
         
             <div>
                 <h3>Sort by : </h3>
-                <select id="select">
+                <select id="pro_select" >
                     <option value="featured">featured</option>
                     <option value="a-z">Alaphabetically A-Z</option>
                     <option value="z-a">Alaphabetically Z-A</option>
-                    <option value="low to high">Price low to high</option>
-                    <option value="high to low">Price high to low</option>
+                    <option value="low">Price low to high</option>
+                    <option value="high">Price high to low</option>
                 </select>
             </div>
         
@@ -102,14 +107,37 @@
 
     <div id="mycontainer">
         <div id="sidebar">
+<<<<<<< Updated upstream
 
         </div>
         <div id="products">
 
+=======
+            <h id="Categories">CATEGORIES</h>
+           <div id="menu-list">
+            <ul>
+                <li><a href="product.html"><span>Shop All</span></a></li>
+                <li><a href=""><span>New Arrivals</span></a></li>
+                <li><a href=""><span>Best Sellers</span></a></li>
+                <li><a href=""><span>Skin Care</span></a></li>
+                <li><a href=""><span>Body Care</span></a></li>
+                <li><a href=""><span>Perfumes</span></a></li>
+                <li><a href=""><span>Combos</span></a></li>
+                <li><a href=""><span>Build a Box</span></a></li>
+            </ul>
+           </div>
+        </div>
+        <div id="products_container">
+           
+        </div>
+        <div>
+           
+>>>>>>> Stashed changes
         </div>
     </div>
 </body>
 </html>
+<<<<<<< Updated upstream
 <script>
     let productsarr = [
     {
@@ -296,3 +324,6 @@ productsarr.map(function(elem){
 // localStorage.setItem("addCart", JSON.stringify(addCart))
 //     ];
 </script>
+=======
+<script src="./ShopAll.js"></script>
+>>>>>>> Stashed changes
