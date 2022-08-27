@@ -241,3 +241,4 @@ function productpage(elem){
     if(img.src === undefined){
     img = null;
     }
+}
