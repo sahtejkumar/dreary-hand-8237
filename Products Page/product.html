@@ -1,0 +1,97 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Product Page</title>
+    <style>
+        *{ 
+            margin:0px;
+        }
+        #main{
+            display:flex;
+            width:80%;
+            margin:auto;
+            height:700px;
+            border:1px solid red;
+            margin-top: 70px;
+        }
+        #product_img{
+            border:1px solid green;
+            width:50%;
+        }
+        .proimages{
+            width:100%;
+            height:100%;
+        }
+        #product_details{
+            border:1px solid green;
+            width:50%;
+            font-family: "Helvetica Neue",Helvetica;
+        }
+        .costdiv{
+            display:flex;
+            text-align:center;
+        }
+        .strikecosts{
+            text-decoration: line-through;
+        }
+    </style>
+</head>
+<body>
+    <div id="main">
+        <div id="product_img"></div>
+        <div id="product_details"></div>
+    </div>
+</body>
+</html>
+<script>
+    var productData = JSON.parse(localStorage.getItem('products'))
+    
+    let item = document.getElementById('main');
+    let product_img = document.getElementById('product_img');
+    let product_details = document.getElementById('product_details');
+
+    function append(){
+        productData.forEach(function(elem){
+            let proImg = document.createElement('div')
+
+            let img = document.createElement('img')
+            img.src = elem.img_url;
+            img.setAttribute('class','proimages')
+
+            let pro_name = document.createElement('div')
+
+            let name = document.createElement('h2')
+            name.innerText  = elem.name;
+
+            let description = document.createElement('h4')
+            description.innerText = elem.description;
+
+            let costdiv = document.createElement('div')
+            costdiv.setAttribute('class','costdiv')
+            
+            let cost = document.createElement('h4')
+            cost.innerText = elem.cost;
+
+            let strikecost = document.createElement('h5')
+            strikecost.innerText = elem.strikecost;
+            strikecost.setAttribute('class','strikecosts')
+
+            let rating = document.createElement('h3')
+            rating.innerText = elem.rating;
+
+            proImg.append(img)
+            costdiv.append(cost,strikecost)
+            pro_name.append(name,description,costdiv,rating)
+            product_img.innerHTML = null;
+            product_details.innerHTML = null;
+            //window.location.reload();
+            product_img.append(proImg);
+            product_details.append(pro_name)
+            
+        })
+    }
+    append()
+</script>
