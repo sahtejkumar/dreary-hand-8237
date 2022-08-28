@@ -18,7 +18,7 @@
                 <h2>Contact Information</h2>
                 <p>Already have an account? Log in</p>
             </div>
-            <input type="email" placeholder="Email" class="input">
+            <input type="email" placeholder="Email" class="input" id="email">
             <input type="checkbox" id="check1">
             <label for="check1" id="line1">Email me with News and Offers</label>
             <div class="shipping-info">
@@ -28,19 +28,19 @@
                     <input type="text" placeholder="First Name">
                     <input type="text" placeholder="Second Name">
                 </div>
-                <input type="text" placeholder="Address" class="input">
+                <input type="text" placeholder="Address" class="input" id="address">
                 <input type="text" placeholder="Apartment, suite, etc. (optional)" class="input">
                 <div class="state">
                     <input type="text" placeholder="City" class="input">
                     <input type="text" placeholder="State" class="input">
                     <input type="text" placeholder="PIN Code" class="input">
                 </div>
-                <input type="text" placeholder="Phone" class="input">
+                <input type="text" placeholder="Phone" class="input" id="phone">
                 <input type="checkbox" id="check2">
             <label for="check2" id="line2">Save this information for next time</label>
             <div class="flex">
                 <p> < Return to cart</p>
-                <button id="btn">Continue to Payment</button>
+                <button id="btn" onclick="fun()">Continue to Payment</button>
             </div>
             <hr class="hr">
             <div class="footer">
@@ -52,19 +52,14 @@
         </div>
         </div>
         <div class="coupon">
-            <div class="flex">
-                <div class="item">
-                    <img src="https://www.bigbasket.com/media/uploads/p/xxl/40208842_1-bella-vita-organic-ubtanplus-face-pack.jpg">
-                    <p id="title">C-Glow Face Pack, 100gm</p>
-                </div>
-                <div class="item">
-                    <p id="price">Rs 698</p>
-                </div>
+            <div id="flex-items">
+                
+                
             </div>
             <hr>
             <div class="discount">
                 <input type="text" placeholder="Gift Card or Discount Code" id="imp">
-                <button id="apply">Apply</button>
+                <button id="apply" onclick="apply_fun()">Apply</button>
             </div>
             <hr>
             <div class="subtotal">
@@ -93,3 +88,4 @@
     </div>
 </body>
 </html>
+<script src="checkout.js"></script>

@@ -1,0 +1,93 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <link rel="stylesheet" href="payment.css">
+</head>
+<body>
+    <div class="header">
+        <img src="https://cdn.shopify.com/s/files/1/0054/6665/2718/files/Checkout_Banner.png?v=16517100635" alt="poster">
+    </div>
+    <div class="main">
+        <div class="cart">
+            <div class="contact-information">
+                <div class="contact">
+                    <p class="first">Email ID</p>
+                    <p id="email_val">gaurav2u4@gmail.com</p>
+                </div>
+                <hr>
+                <div class="shipping">
+                    <p class="first">Shipping</p>
+                    <p id="address_val">This is my address</p>
+                </div>
+                <div class="phone">
+                    <p class="first">Phone Number</p>
+                    <p id="phone_val">7003382093</p>
+                </div>
+            </div>
+            <div class="main-gateway">
+                <div class="gateway">
+                    <div class="first-gateway">
+                        <p class="first">Paytm Payment Gateway</p>
+                    </div>
+                    <div class="second-gateway">
+                        <img src="https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcQL-RvcXyvDNmYnbUP6wfPxRk6HK9D6rZg5fwe5enIpsQ&s">
+                        <img src="https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcTJphIcZ6hWgXql2ffc7A_QJjTPYPPDm-wM5UcpaU585w&s">
+                        <img src="https://play-lh.googleusercontent.com/6iyA2zVz5PyyMjK5SIxdUhrb7oh9cYVXJ93q6DZkmx07Er1o90PXYeo6mzL4VC2Gj9s">
+                        <img src="https://www.investopedia.com/thmb/LF_8TWZPQxdvn6y0DG-bNIZT5Co=/1000x714/filters:fill(auto,1)/MClogo-c823e495c5cf455c89ddfb0e17fc7978.jpg">
+                        <img src="https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcQT9D8JhSjD2KUrN237LhO-YxKSUuKexbZJhw&usqp=CAU">
+                    </div>
+                </div>
+                <hr>
+                <div class="third-gateway">
+                    <div class="img-body">
+                        <img src="https://images.prismic.io/statrys/c91fa6f6-40e7-4a57-ad60-972dc1e51138_ENG_int-trade-payment-methods.png?auto=compress%2Cformat">
+                        <p>After clicking “Complete order”, you will be redirected to Paytm Payment Gateway to complete your purchase securely.</p>
+                    </div>   
+                </div>
+                <button id="complete" onclick="complete()">Complete Order</button>
+            </div>
+            
+            
+        </div>
+        <div class="coupon">
+            <div id="flex-items">
+                
+                
+            </div>
+            <hr>
+            <div class="discount">
+                <input type="text" placeholder="Gift Card or Discount Code" id="imp">
+                <button id="apply" onclick="apply_fun()">Apply</button>
+            </div>
+            <hr>
+            <div class="subtotal">
+                <p class="myfont">Subtotal</p>
+                <p id="sub">Rs 698</p>
+            </div>
+            <div class="shipping">
+                <p class="myfont">Shipping</p>
+                <p class="small">Calculated at next step</p>
+            </div>
+            <hr>
+            <div class="total-div">
+                <div class="para">
+                    <p>Total</p> 
+                    <p class="small">Including 106.47 in taxes</p>
+                </div>
+                
+                <div class="div">
+                    <span class="small">INR</span>
+                    <p id="total">Rs 698</p>
+                </div>   
+                
+                
+            </div>
+        </div>
+    </div>
+</body>
+</html>
+<script src="checkout.js"></script>
