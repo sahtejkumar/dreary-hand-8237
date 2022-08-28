@@ -1,0 +1,32 @@
+#main {
+    border: 1px solid black;
+
+    width:100%;
+    display: flex;
+}
+
+#bda {
+    height: 80px;
+    display: flex;
+}
+.para{
+    color:black;
+    text-decoration: none;
+}
+
+#chota {
+    height: auto;
+    display: flex;
+    gap: 20px;
+    font-size: 15px;
+
+    font-family: 'Segoe UI';
+}
+
+#kam {
+    margin-top: 5px;
+    width: 50px;
+    height: 50px;
+    gap: 25px;
+    display: flex;
+}

@@ -1,0 +1,183 @@
+
+  /* -------Main div----- */
+  @import 'navbar.css';
+  #main{
+    display:flex;
+    width:70%;
+    margin:auto;
+    margin-bottom: 30px;
+}
+hr{
+    margin-bottom: 30px;
+}
+
+/* ------product image section -------- */
+#product_img>img{
+    width:100%;
+    height:500px;
+    box-shadow: rgb(204, 219, 232) 3px 3px 6px 0px inset, rgba(255, 255, 255, 0.5) -3px -3px 6px 1px inset;
+}
+
+#product_details{
+    font-family: 'Segoe UI', Geneva, Verdana, sans-serif;
+    width:40%;
+   padding:30px;
+   box-shadow: rgba(0, 0, 0, 0.25) 0px 0.0625em 0.0625em, rgba(0, 0, 0, 0.25) 0px 0.125em 0.5em, rgba(255, 255, 255, 0.1) 0px 0px 0px 1px inset;
+}
+/* -----------Product details section--------- */
+#description{
+    color:rgb(42, 36, 36);
+    font-family:'Gill Sans', 'Gill Sans MT', Calibri, 'Trebuchet MS', sans-serif
+}#costdiv{
+    display:flex;
+    align-items:center;
+    margin-top:-25px;
+    margin-bottom: 20px;
+    position:relative;
+}
+#strikecosts{
+    text-decoration: line-through;
+    margin-left: 11px;
+    color:rgb(46, 46, 46)
+}
+#rating{
+    position: absolute;
+    color:rgb(12, 122, 12);
+    right:0px;
+}
+#buttondiv{
+    display:flex;
+    margin-bottom:25px;
+   
+}
+#minus{
+    font-size: 30px; 
+    margin-right: 12px;
+}
+#plus{
+    font-size: 28px; 
+    margin-right: 15px;
+}
+#countNum{
+    font-size: 28px; 
+    margin-right: 12px;
+}
+
+#addtocart{
+    color:white;
+    width:100%;
+    background-color:#294e30;
+    border:none;
+    border-radius: 15px;
+    height:35px;
+}
+#Offers{
+     color:#294e30;
+     margin-bottom:-12px;
+}
+.green{
+    color:#294e30;
+     margin-bottom:-17px;
+}
+.para{
+    color:rgb(61, 60, 60);
+    margin-top: 18px;
+}
+#pincode{
+    width:70%;
+    height:26px;
+    font-size: 20px;
+    margin-top: 20px;
+}
+#checkbtn{
+    padding:6px 12px 6px 12px;
+    font-size: 20px;
+    color:white;
+    background-color:#294e30;
+    border:none;
+    border-radius: 10px;
+    margin-left: 6px;;
+}
+/* ---------Middle section--------- */
+
+
+#middle_section{
+    display:flex;
+    width:70%;
+    justify-content:space-evenly;
+    align-items:center;
+    margin:auto;
+    border:0.1px solid rgb(234, 213, 213);
+    margin-bottom: 60px;
+}
+#rating_img{
+    height:220px;
+    width:300px;
+}
+#rate{
+    color:#294e30;
+    font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+    font-size: 60px;
+}
+#review_btn{
+    color:white;
+    background-color:#2f5035;
+    border:none;
+    border-radius:20px;
+    padding:05px 20px;
+}
+/* -----------------Review section ----------- */
+
+#reviews{
+    display:grid;
+    grid-template-columns: repeat(4,1fr);
+    height:800px;
+    row-gap:50px;
+    column-gap: 30px;
+    width:70%;
+    margin:auto;
+}
+.review_boxes{
+    height:350px;
+    width:100%;
+    box-shadow: rgba(0, 0, 0, 0.25) 0px 0.0625em 0.0625em, rgba(0, 0, 0, 0.25) 0px 0.125em 0.5em, rgba(255, 255, 255, 0.1) 0px 0px 0px 1px inset;
+    position:relative;
+    padding:15px;
+    font-family: sans-serif;
+}
+.feedback{
+    font-family:Georgia, 'Times New Roman', Times, serif
+}
+.review_boxes:nth-child(2){
+    height:400px;
+}.review_boxes:nth-child(3){
+    height:380px;
+}.review_boxes:nth-child(8){
+    height:360px;
+}.review_boxes:nth-child(4){
+    height:360px;
+}
+.review_name{
+    display:flex;
+    justify-content:left;
+    align-items:center;
+}
+.name{
+    margin-right: 13px;
+}
+.review_name>img{
+    height:10px;
+    width:10px;
+}
+.stars>img{
+    height:25px;
+    width:25px;
+}
+.review_images{
+    height:150px;
+    width:220px;
+    position:absolute;
+    bottom:0px;
+    margin-top: 15px;
+}
+/* ------------review section close------ */

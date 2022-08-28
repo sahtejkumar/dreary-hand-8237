@@ -1,0 +1,83 @@
+#form {
+    box-shadow: rgba(255, 255, 255, 0.1) 0px 1px 1px 0px inset, rgba(50, 50, 93, 0.25) 0px 50px 100px -20px, rgba(0, 0, 0, 0.3) 0px 30px 60px -30px;
+    width: 30%;
+    height: 500px;
+    margin: auto;
+    padding-left: 20px;
+    padding-right: 20px;
+}
+
+h1 {
+    text-align: center;
+    font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+    font-weight: 200;
+}
+
+#log_in {
+    display: block;
+    margin-top: 20px;
+    width: 50%;
+    height: 42px;
+    background-color: black;
+    color: white;
+    font-size: 17px;
+    font-weight: 200;
+    text-align: center;
+    border-radius: 10px 10px 10px 10px;
+    margin-left: 100px;
+
+}
+
+#email {
+    width: 98%;
+    height: 30px;
+
+}
+
+#password {
+    width: 98%;
+    height: 30px;
+    margin-top: 20px;
+}
+
+#forgot {
+    width: 100%;
+    height: 30px;
+     margin-top: 20px;
+}
+
+#forgot>a {
+    text-decoration:underline;
+}
+
+#create {
+    width: 100%;
+    height: 30px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+
+    margin-top: 20px;
+    text-align: center;
+
+}
+
+#create>a {
+    text-decoration: none;
+    color: black;
+    border: green;
+}
+
+hr {
+    justify-content: center;
+    width: 30%;
+    margin-top: -5px;
+}
+
+#email:hover {
+    border: 2px solid #3ab33a
+}
+
+#password:hover {
+    border: 2px solid #3ab33a
+}

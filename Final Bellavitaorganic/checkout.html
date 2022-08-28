@@ -1,0 +1,91 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <link rel="stylesheet" href="checkout.css">
+</head>
+<body>
+    <div class="header">
+        <img src="https://cdn.shopify.com/s/files/1/0054/6665/2718/files/Checkout_Banner.png?v=16517100635" alt="poster">
+    </div>
+    <div class="main">
+        <div class="cart">
+            <p class="cls">Cart   >   Information   >    Shipping    >    Payment</p>
+            <div class="contact-info">
+                <h2>Contact Information</h2>
+                <p>Already have an account? Log in</p>
+            </div>
+            <input type="email" placeholder="Email" class="input" id="email">
+            <input type="checkbox" id="check1">
+            <label for="check1" id="line1">Email me with News and Offers</label>
+            <div class="shipping-info">
+                <h2>Shipping Address</h2>
+                <input type="text" placeholder="Enter Country" class="input">
+                <div class="name-input">
+                    <input type="text" placeholder="First Name">
+                    <input type="text" placeholder="Second Name">
+                </div>
+                <input type="text" placeholder="Address" class="input" id="address">
+                <input type="text" placeholder="Apartment, suite, etc. (optional)" class="input">
+                <div class="state">
+                    <input type="text" placeholder="City" class="input">
+                    <input type="text" placeholder="State" class="input">
+                    <input type="text" placeholder="PIN Code" class="input">
+                </div>
+                <input type="text" placeholder="Phone" class="input" id="phone">
+                <input type="checkbox" id="check2">
+            <label for="check2" id="line2">Save this information for next time</label>
+            <div class="flex">
+                <p> < Return to cart</p>
+                <button id="btn" onclick="fun()">Continue to Payment</button>
+            </div>
+            <hr class="hr">
+            <div class="footer">
+                <p>Refund Policy</p>
+                <p>Shopping Policy</p>
+                <p>Privacy Policy</p>
+                <p>Terms of Service</p>
+            </div>
+        </div>
+        </div>
+        <div class="coupon">
+            <div id="flex-items">
+                
+                
+            </div>
+            <hr>
+            <div class="discount">
+                <input type="text" placeholder="Gift Card or Discount Code" id="imp">
+                <button id="apply" onclick="apply_fun()">Apply</button>
+            </div>
+            <hr>
+            <div class="subtotal">
+                <p class="myfont">Subtotal</p>
+                <p id="sub">Rs 698</p>
+            </div>
+            <div class="shipping">
+                <p class="myfont">Shipping</p>
+                <p class="small">Calculated at next step</p>
+            </div>
+            <hr>
+            <div class="total-div">
+                <div class="para">
+                    <p>Total</p> 
+                    <p class="small">Including 106.47 in taxes</p>
+                </div>
+                
+                <div class="div">
+                    <span class="small">INR</span>
+                    <p id="total">Rs 698</p>
+                </div>   
+                
+                
+            </div>
+        </div>
+    </div>
+</body>
+</html>
+<script src="checkout.js"></script>

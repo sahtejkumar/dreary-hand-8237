@@ -1,0 +1,72 @@
+.coupon .flex {
+    margin-bottom: 50px;
+}
+.item img {
+    height: 70px;
+    width: 70px;
+    border: 1px solid lightgrey;
+    border-radius: 5%;
+}
+.item {
+    display: flex;
+    align-items: center;
+}
+#title, #price {
+    color: #323232;
+    font-weight: 500;
+    margin-left: 10px;
+}
+.discount {
+    display: flex;
+    margin: 20px 0;
+    gap: 10px;
+}
+.discount input, .discount button {
+    padding: 3%;
+}
+.discount input {
+    width: 70%;
+    border: 1px solid #d9d9d9;
+    border-radius: 5%;
+}
+.discount button {
+    width: 25%;
+    background-color: #475d4b;
+    border: 1px transparent solid;
+    border-radius: 5px;
+    color: white;
+    font-weight: 500;
+    text-align: center;
+    cursor: pointer;
+}
+.subtotal, .shipping, .total-div {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+}
+.myfont {
+    color: #535353;
+    line-height: 1.3em;
+}
+.small {
+    color: #717171;
+    font-size: 0.8571428571em;
+}
+#total {
+    font-size: 1.7142857143em;
+    font-weight: 500;
+    letter-spacing: -0.04em;
+    line-height: 1em;
+}
+.div {
+    display: flex;
+    align-items: center;
+    gap: 10px;
+}
+.para p {
+    line-height: 0.5;
+}
+#flex-items>div {
+    border: 1px solid rgb(235, 233, 233);
+    padding: 2%;
+}
