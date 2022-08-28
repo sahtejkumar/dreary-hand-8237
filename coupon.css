@@ -66,3 +66,7 @@
 .para p {
     line-height: 0.5;
 }
+#flex-items>div {
+    border: 1px solid rgb(235, 233, 233);
+    padding: 2%;
+}
